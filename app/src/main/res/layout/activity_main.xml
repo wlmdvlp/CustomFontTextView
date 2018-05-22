@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wg.com.customtextview.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+    <com.wakim.customfont.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roboto BlackItalic"
+        app:fontPath ="@string/Roboto_BlackItalic"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <com.wakim.customfont.CustomFontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loto Regular"
+        app:fontColor="@color/colorPrimary"
+        app:fontPath ="@string/loto_regular"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+
+        <com.wakim.customfont.CustomFontEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Roboto BlackItalic"
+            app:fontColor="@color/colorPrimary"
+            app:fontPath ="@string/Roboto_BlackItalic"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CustomTextView</string>
+
+    <string name = "loto_regular">fonts/Lato-Light.ttf</string>
+    <string name = "Roboto_BlackItalic">fonts/Roboto-BlackItalic.ttf</string>
+</resources>

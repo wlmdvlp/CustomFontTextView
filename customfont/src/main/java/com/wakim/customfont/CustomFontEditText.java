@@ -6,18 +6,19 @@ import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
+import android.widget.EditText;
 
+/**
+ * Created by web155 on 22/5/18.
+ */
 
-public class CustomFontTextView extends TextView {
+public class CustomFontEditText extends EditText {
 
-
-
-    public CustomFontTextView(Context context) {
+    public CustomFontEditText(Context context) {
         this(context, null);
     }
 
-    public CustomFontTextView(Context context, AttributeSet attrs) {
+    public CustomFontEditText(Context context, AttributeSet attrs) {
         super(context, attrs);
 
         TypedArray array = context.obtainStyledAttributes(attrs,
@@ -42,6 +43,4 @@ public class CustomFontTextView extends TextView {
     private void setCustomTypeFaceColor(ColorStateList path_color){
         this.setTextColor(path_color);
     }
-
-
 }
